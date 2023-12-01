@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <script type="text/javascript" th:src="@{js/main.js}"></script>
+</head>
+<body>
+    <p>This is home page</p>
+    <p>Welcome, <span th:text="${name}"></span> </p>
+    <span th:text="${#strings.toUpperCase(name)}"></span>
+    <div th:with="a=20, b=30">
+        <p th:text=" 'value of a*b = ' + ${a}*${b} "></p>
+    </div>
+    <button onclick="main()">Click here</button>
+
+    <footer th:insert="fragments/fragdemo :: header">
+        <h2>Inside parent footer - Home</h2>
+    </footer>
+
+</body>
+</html>
+
+<!--INCLUDE-->
+<!--<footer>-->
+<!--    <h1>From Fragment</h1>-->
+<!--</footer>-->
