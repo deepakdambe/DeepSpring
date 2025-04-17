@@ -111,8 +111,8 @@
 							<inputSpec>${project.basedir}/src/main/resources/employee-api.yaml</inputSpec>
 							<output>${project.build.directory}/generated-sources/openapi</output>
 							<generatorName>spring</generatorName>
-							<apiPackage>com.example.employee.api</apiPackage>
-							<modelPackage>com.example.employee.model</modelPackage>
+							<apiPackage>com.example.hospitalmanagement.api</apiPackage>
+							<modelPackage>com.example.hospitalmanagement.model</modelPackage>
 							<configOptions>
 								<interfaceOnly>true</interfaceOnly>
 								<dateLibrary>java8</dateLibrary>
